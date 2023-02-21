@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive, sans-serif;
+    background-color: #f1c47c;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FFC66D;
+    color: black;
+}
+
+.nav-links a {
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #f1c47c;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* end navbar */
+.container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.container img {
+    width: max-content;
+    vertical-align: middle;
+}
+
+.container-text {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.tentang-title {
+    margin: 20px;
+    text-align: center;
+}
+
+.container-tentang {
+    display: flex;
+    margin: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+article p {
+    width: 500px;
+   
+}
+
+.tentang-aside  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container-member {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: row;
+    text-align: center;
+}
+
+.container-member div {
+    margin: 5px;
+}
+
+.container-member img {
+    width: 200px;
+    border-radius: 20px;
+}
+.fotandside {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fotandside aside {
+    margin-top: 10px;
+}
+.fotandside img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+footer a {
+    color: #c41ca2;
+}
+@media (max-width: 768px) {
+    .menu {
+        margin-top: 10px;
+        display: none;
+        position: absolute;
+        background-color: #FFC66D;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        z-index: 999;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #FFC66D;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .container img {
+        opacity: 1;
+    }
+
+    .container-tentang {
+        flex-direction: column;
+    }
+    /* .fotandside {
+        flex-direction: column;
+    } */
+
+}
